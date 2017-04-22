@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+
+    android:id="@+id/ValueList"
+    android:layout_width="250dp"
+    android:layout_margin="16dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ticketStatusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ticket Status :"
+        android:textSize="12dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#c1c1c1"
+        android:id="@+id/ticketStatus"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="14dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#484848"
+        android:id="@+id/reasonLog"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LogTimeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Time :"
+            android:layout_marginBottom="10dp"
+            android:textSize="10dp"
+            android:textColor="#c1c1c1"
+            android:id="@+id/LogTimeTitle"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:textSize="12dp"
+            android:textColor="#484848"
+            android:id="@+id/LogTime"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/assignedByLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assigned By :"
+            android:id="@+id/assignedByTitle"
+            android:layout_marginBottom="10dp"
+            android:textSize="10dp"
+            android:textColor="#c1c1c1"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:textSize="12dp"
+            android:textColor="#484848"
+            android:id="@+id/assignedBy"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/assignedToLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assigned To :"
+            android:id="@+id/assignedToTitle"
+            android:layout_marginBottom="10dp"
+            android:textSize="10dp"
+            android:textColor="#c1c1c1"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:textSize="12dp"
+            android:textColor="#484848"
+            android:id="@+id/assignedTo"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/resolvedByLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resolved By :"
+            android:id="@+id/resolvedByTitle"
+            android:layout_marginBottom="10dp"
+            android:textSize="10dp"
+            android:textColor="#c1c1c1"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:textSize="12dp"
+            android:textColor="#484848"
+            android:id="@+id/resolvedBy"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/descriptionLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:id="@+id/descriptionTitle"
+            android:layout_marginBottom="10dp"
+            android:textSize="12dp"
+            android:textColor="#c1c1c1"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#484848"
+            android:id="@+id/description"
+            />
+    </LinearLayout>
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#919191"></View>
+
+</LinearLayout>

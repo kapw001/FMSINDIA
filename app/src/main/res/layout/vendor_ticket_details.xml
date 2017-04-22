@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:background="#e4e4e4"
+        android:fillViewport="false"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+
+
+                card_view:cardCornerRadius="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.fms.fmsindia.plugins.CustomTextView
+                        android:id="@+id/addTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/prescription_edit_fullInfo"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#919191"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#cccdce"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ticketNoLay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.fms.fmsindia.plugins.CustomEditext
+                                android:id="@+id/ticketNoDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+
+                                android:hint="Ticket No *"
+
+                                android:imeOptions="actionNext"
+
+                                android:text="TT109"
+                                android:textColorHint="#000000"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ticketNoLay1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.fms.fmsindia.plugins.CustomEditext
+                                android:id="@+id/issueDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+
+                                android:hint="Issue *"
+
+                                android:imeOptions="actionNext"
+
+                                android:text="Water tank leakage"
+                                android:textColorHint="#000000"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ticketNoLay2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.fms.fmsindia.plugins.CustomEditext
+                                android:id="@+id/CategoryDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+
+                                android:hint="Category*"
+
+                                android:imeOptions="actionNext"
+
+                                android:text="Plumbimg"
+                                android:textColorHint="#000000"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ticketNoLay3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.fms.fmsindia.plugins.CustomEditext
+                                android:id="@+id/PriorityDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+
+                                android:hint="Priority *"
+
+                                android:imeOptions="actionNext"
+
+                                android:text="Low"
+                                android:textColorHint="#000000"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ticketNoLay4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.fms.fmsindia.plugins.CustomEditext
+                                android:id="@+id/targetDateDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+
+                                android:hint="Creation Date *"
+
+                                android:imeOptions="actionNext"
+
+                                android:text="2016-08-26"
+                                android:textColorHint="#000000"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ticketNoLay5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.fms.fmsindia.plugins.CustomEditext
+                                android:id="@+id/preferredCallTimeDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+
+                                android:hint="Preferred Date to attend the issue"
+
+                                android:imeOptions="actionNext"
+
+                                android:text="12:00 AM"
+                                android:textColorHint="#000000"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ticketNoLay6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.fms.fmsindia.plugins.CustomEditext
+                                android:id="@+id/preferredTimeToAttendDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+
+                                android:hint="Preferred Time to attend the issue"
+
+                                android:imeOptions="actionNext"
+
+                                android:text="12:00 AM"
+                                android:textColorHint="#000000"
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <com.fms.fmsindia.plugins.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="5dp"
+                            android:text="Description" />
+
+                        <com.fms.fmsindia.plugins.CustomEditext
+                            android:id="@+id/description"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/mybutton2" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+
+
+                card_view:cardCornerRadius="4dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <com.fms.fmsindia.plugins.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Issue Image"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="12dp"
+                     />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+
+                        android:layout_marginBottom="5dp"
+                        android:background="#cccdce"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="6dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:id="@+id/imageViewLink"/>
+                    </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+
+
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <com.fms.fmsindia.plugins.CustomTextView
+                        android:id="@+id/addTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/prescription_edit_fullInfo"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#919191"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#cccdce"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ticketNameLay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.fms.fmsindia.plugins.CustomEditext
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:hint="First Name"
+                                android:imeOptions="actionNext"
+
+                                android:textColorHint="#000000"
+
+
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ticketLastLay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.fms.fmsindia.plugins.CustomEditext
+                                android:id="@+id/ticketLastName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:hint="LastName"
+                                android:imeOptions="actionNext"
+
+                                android:textColorHint="#000000"
+
+
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ticketPhoneLay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.fms.fmsindia.plugins.CustomEditext
+                                android:id="@+id/ticketPhoneNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:hint="PhoneNo"
+                                android:imeOptions="actionNext"
+
+                                android:textColorHint="#000000"
+
+
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ticketEmailAdd"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.fms.fmsindia.plugins.CustomEditext
+                                android:id="@+id/ticketEmailAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:hint="Email Address"
+                                android:imeOptions="actionNext"
+
+                                android:textColorHint="#000000"
+
+
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ticketAddressForCommunicationLay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.fms.fmsindia.plugins.CustomEditext
+                                android:id="@+id/ticketAddressForCommunication"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:hint="Address for Communication"
+                                android:imeOptions="actionNext"
+                                android:textColorHint="#000000"
+
+
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ticketLandMarkLay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.fms.fmsindia.plugins.CustomEditext
+                                android:id="@+id/ticketLandMark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:hint="LandMark"
+                                android:imeOptions="actionNext"
+                                android:textColorHint="#000000"
+
+
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+
+
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.fms.fmsindia.plugins.CustomTextView
+                        android:id="@+id/addTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="12dp"
+                        android:text="Ticket Status"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#919191"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#cccdce"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical">
+
+                        <com.fms.fmsindia.plugins.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="5dp"
+                            android:text="User Details"
+                            android:visibility="gone" />
+
+                        <com.fms.fmsindia.plugins.CustomEditext
+                            android:id="@+id/userDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/mybutton2"
+                            android:paddingLeft="10dp"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:paddingTop="15dp">
+
+                            <com.fms.fmsindia.plugins.CustomTextView
+                                android:id="@+id/com.fms.fmsindia.plugins.CustomTextView10"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:gravity="left"
+                                android:text="Assigned To *"
+                                android:textSize="16dp" />
+
+                            <Spinner
+                                android:id="@+id/assignedTo"
+                                android:layout_width="200dp"
+
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:paddingTop="15dp">
+
+                            <com.fms.fmsindia.plugins.CustomTextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:gravity="left"
+                                android:text="TicketStatus *"
+                                android:textSize="16dp" />
+
+                            <Spinner
+                                android:id="@+id/ticketStatus"
+                                android:layout_width="200dp"
+
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/resolvedLinearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="15dp">
+
+                            <com.fms.fmsindia.plugins.CustomTextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:gravity="left"
+                                android:paddingLeft="5dp"
+                                android:text="Resolved By *"
+                                android:textSize="16dp" />
+
+                            <Spinner
+                                android:id="@+id/resolvedBy"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+
+                                />
+
+                        </LinearLayout>
+
+                        <com.fms.fmsindia.plugins.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:paddingLeft="5dp"
+                            android:text="Vendor Description" />
+
+                        <EditText
+                            android:id="@+id/vendorDescriptionOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/mybutton2"
+                            android:clickable="true"
+                            android:onClick="true" />
+
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ticketDateAndTime"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <com.fms.fmsindia.plugins.CustomEditext
+                                android:id="@+id/dateAndTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:hint="DateAndTime"
+                                android:imeOptions="actionNext"
+                                android:textColorHint="#000000"
+
+
+                                android:textSize="16dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <com.fms.fmsindia.plugins.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:paddingLeft="5dp"
+                            android:text="Reopen Ticket Log"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/reasonLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.fms.fmsindia.plugins.CustomEditext
+                                android:id="@+id/ReopenTicketLog"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/mybutton2"
+                                android:paddingLeft="5dp"
+                                android:textSize="12dp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <com.fms.fmsindia.plugins.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:paddingLeft="5dp"
+                            android:text="Vendor User Description" />
+
+
+                        <com.fms.fmsindia.plugins.CustomEditext
+                            android:id="@+id/vendorUserDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/mybutton2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <com.fms.fmsindia.plugins.CustomTextView
+                                android:id="@+id/details"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/border"
+                                android:elevation="1dp"
+                                android:gravity="center"
+                                android:padding="10dp"
+
+                                android:text="Click to view the ticket status log"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/amountLinearLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/ticketAmount"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.fms.fmsindia.plugins.CustomEditext
+                                    android:id="@+id/amount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:hint="Amount"
+                                    android:imeOptions="actionNext"
+                                    android:textColorHint="#000000"
+
+
+                                    android:textSize="16dp" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="horizontal"
+                                android:paddingTop="15dp">
+
+                                <com.fms.fmsindia.plugins.CustomTextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="left"
+                                    android:text="Mode of Payment *"
+                                    android:textSize="15dp" />
+
+                                <Spinner
+                                    android:id="@+id/modeOfPayment"
+                                    android:layout_width="175dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTicketStatus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal">
+
+                <com.fms.fmsindia.plugins.CustomButton
+                    android:id="@+id/submitTicket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:text="Submit"
+                    android:textColor="#ffffff"
+
+                    />
+
+                <com.fms.fmsindia.plugins.CustomButton
+                    android:id="@+id/cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:text="Cancel"
+                    android:textColor="#ffffff"
+
+                    />
+
+                <com.fms.fmsindia.plugins.CustomButton
+                    android:id="@+id/ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:text="Update the payment"
+                    android:textColor="#ffffff"
+
+                    />
+
+                <com.fms.fmsindia.plugins.CustomButton
+                    android:id="@+id/close"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:text="Exit"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"
+
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

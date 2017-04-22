@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="4dp">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="#ecebeb"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/picid"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mandefault"
+
+
+                    />
+
+                <com.fms.fmsindia.plugins.CustomTextView
+                    android:id="@+id/addimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="Add Image"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="#16ba23"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:orientation="vertical">
+
+
+                    <com.fms.fmsindia.plugins.CustomEditext
+                        android:id="@+id/firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="First Name"
+                        android:background="@drawable/nonborder"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#484848" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#919191"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+
+                    <com.fms.fmsindia.plugins.CustomEditext
+                        android:id="@+id/lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Last Name"
+                        android:background="@drawable/nonborder"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#484848" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#919191"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+
+                    <com.fms.fmsindia.plugins.CustomEditext
+
+                        android:id="@+id/emailid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Email Id"
+                        android:background="@drawable/nonborder"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#484848" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#919191"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+
+                    <com.fms.fmsindia.plugins.CustomEditext
+
+                        android:id="@+id/phonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Phone Number"
+                        android:background="@drawable/nonborder"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#484848" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#919191"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+
+                    <com.fms.fmsindia.plugins.CustomEditext
+
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Address"
+                        android:background="@drawable/nonborder"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#484848" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#919191"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+
+                    <com.fms.fmsindia.plugins.CustomEditext
+
+                        android:id="@+id/landmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="LandMark"
+                        android:background="@drawable/nonborder"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#484848" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.fms.fmsindia.plugins.CustomTextView
+                android:id="@+id/upadte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Update"
+                android:textAllCaps="true"
+                android:textColor="#16ba23"
+                android:textSize="16dp"
+                 />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

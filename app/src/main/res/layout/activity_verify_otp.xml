@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loginback"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context="com.fms.fmsindia.registion.VerifyOtp">
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageView"
+        android:layout_margin="12dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo" />
+
+    <com.fms.fmsindia.plugins.CustomTextView
+        android:id="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="25dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        />
+    <com.fms.fmsindia.plugins.CustomTextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="25dp"
+        android:text="(Enter the OTP below in case if we fail to detect the SMS automatically)"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        />
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="52dp"
+        android:orientation="vertical">
+
+    <com.fms.fmsindia.plugins.CustomEditext
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:paddingLeft="10dp"
+        android:hint="Enter OTP"
+        android:textColorHint="#ffffff"
+        android:background="@drawable/nonborder"
+        android:id="@+id/otpVerify"
+         />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"/>
+    </LinearLayout>
+    <com.fms.fmsindia.plugins.CustomButton
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_margin="24dp"
+        android:text="Log In"
+        android:textColor="#ffffff"
+        android:background="@drawable/smallbak"
+        android:id="@+id/signIn"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

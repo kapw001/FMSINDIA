@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffebebeb">
+
+        <TextView
+            android:id="@+id/lblListItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:paddingTop="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#ffaedcc3"
+             />
+        <TextView
+            android:id="@+id/lblListItem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            android:paddingLeft="1dp"
+            android:paddingTop="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#bc626262"
+           />
+        <TextView
+            android:id="@+id/lblListItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/lblListItem3"
+
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#bc626262" />
+        <TextView
+            android:id="@+id/lblListItem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="15dp"
+
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#bc626262" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#ffffffff"
+
+        />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context="com.fms.fmsindia.registion.Login">
+
+    <com.fms.fmsindia.plugins.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="LogIn"
+        android:textSize="18sp"
+        android:id="@+id/textView8" />
+
+    <com.fms.fmsindia.plugins.CustomEditext
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:hint="Username"
+        android:imeOptions="actionNext"
+        android:inputType="textCapWords"
+        android:layout_marginTop="10dp"
+
+        />
+    <com.fms.fmsindia.plugins.CustomEditext
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passsword"
+        android:hint="Password"
+        android:imeOptions="actionNext"
+        android:inputType="textCapWords"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.fms.fmsindia.plugins.CustomButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:id="@+id/submit"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
